@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-mono font-normal text-body;
+}
+
+h1 {
+  @apply font-bold text-h1;
+}
+
+h2 {
+  @apply font-bold text-h2;
+}
+
+h3 {
+  @apply text-h3;
+}
+
+h4 {
+  @apply text-h4;
+}

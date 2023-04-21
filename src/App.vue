@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld :childProps="msg" /> -->
+  <!-- <HelloWorld>Message: {{ msg }}</HelloWorld> -->
+  <DevFinder />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import DevFinder from './components/DevFinder.vue';
 
 export default {
   name: 'App',
+  data() {
+    return {
+      msg: 'No child msg yet'
+    }
+  },
   components: {
-    HelloWorld
+    // HelloWorld,
+    DevFinder
+
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
